@@ -1,0 +1,39 @@
+baseURL: "https://mamillapalli.co/"
+title: Preetham Mamillapalli
+languageCode: en-us
+theme: terminal
+
+pagination:
+  pagerSize: 5
+
+params:
+  centerTheme: true
+  autoCover: true
+
+  logo:
+    logoText: "Preetham Mamillapalli"
+    logoHomeLink: "/"
+  
+  contentTypeName: posts
+  
+  showMenuItems: 3
+  
+  fullWidthTheme: false
+  hideFooter: false
+  
+  description: "I'm an inquisitive highschooler passionate about AI and how it could change the world."
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /_index/
+      weight: 1
+    - identifier: posts
+      name: Blog
+      url: /posts/
+      weight: 2
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 3
