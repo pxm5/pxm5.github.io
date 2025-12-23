@@ -1,4 +1,4 @@
-baseURL: "https://mamillapalli.co/"
+baseURL: "https://pxm5.github.io/"
 title: Preetham
 languageCode: en-us
 theme: terminal
@@ -39,7 +39,7 @@ menu:
       name: About
       url: /about/
       weight: 3
-      
+
 caches:
   images:
     dir: :cacheDir/images
