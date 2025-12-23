@@ -1,5 +1,5 @@
 baseURL: "https://mamillapalli.co/"
-title: Preetham Mamillapalli
+title: Preetham
 languageCode: en-us
 theme: terminal
 
@@ -9,25 +9,27 @@ pagination:
 params:
   centerTheme: true
   autoCover: true
-
+  hideTags: true
   logo:
     logoText: "Preetham Mamillapalli"
     logoHomeLink: "/"
   
-  contentTypeName: posts
-  
+  # contentTypeName: posts
   showMenuItems: 3
   
   fullWidthTheme: false
   hideFooter: false
   
   description: "I'm an inquisitive highschooler passionate about AI and how it could change the world."
+  showPostsOnHomePage: 0
+
+# This disables all kinds of categories, tags, etc.
 
 menu:
   main:
     - identifier: home
       name: Home
-      url: /_index/
+      url: /
       weight: 1
     - identifier: posts
       name: Blog

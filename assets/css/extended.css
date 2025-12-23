@@ -1,0 +1,10 @@
+/* to remove the brackets that show up under blog widgets */
+
+.read-more.button {
+  display: none;
+}
+
+
+.h1 {
+    font-size: 200px;
+}
