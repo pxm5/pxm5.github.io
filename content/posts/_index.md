@@ -4,5 +4,4 @@ showToc: false
 ---
 
 # My Blog
-
-Here's where I write about AI, homelab projects, and my journey through tech.
+Posts exploring machine learning models, algorithms, and systems through implementation and analysis, as well as technical perspectives on recent research and technology trends.

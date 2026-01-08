@@ -3,9 +3,9 @@ title: "About"
 showToc: false
 ---
 
-Hi! I'm Preetham, a high school senior at Milpitas High interested in Computer Science.
+I'm a high school senior at Milpitas High interested in Computer Science and Artificial Intelligence.
 
-I'm currently working on my homelab project where I run services like Jellyfin, n8n, and more using Docker.
+Almost all of my learning is self-directed through free online courses and resources, and hands-on experimentation is my favourite way to learn new things.
 
 ## Interests
 - Systems Administration
@@ -14,4 +14,6 @@ I'm currently working on my homelab project where I run services like Jellyfin, 
 - Reinforcement Learning
 - Google Cloud Platform
 
-Feel free to check out my [GitHub](https://github.com/pxm5) or connect with me on [LinkedIn](https://www.linkedin.com/in/preetham-mamillapalli-6a0217289/).
+## Goals
+
+In the long term, I aim to pursue research-oriented work in computer science, with a focus on machine learning. I’m particularly interested in environments that value **depth, rigor, and collaboration**.
