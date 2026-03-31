@@ -14,6 +14,6 @@ export const projects: Project[] = [
       "A collection of implementations of foundational ML models that I implemented from their respective research papers.",
     image: "https://github.com/pxm5/pxm5.github.io/blob/main/src/images/alexnet_img.png",
     tags: ["Python", "PyTorch", "Computer Vision"],
-    link: "#",
+    link: "",
   },
 ];
