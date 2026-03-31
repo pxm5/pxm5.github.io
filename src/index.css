@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 5%;
+    --foreground: 0 0% 92%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 92%;
+
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 92%;
+
+    --primary: 0 0% 95%;
+    --primary-foreground: 0 0% 5%;
+
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 80%;
+
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 55%;
+
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 92%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 0 0% 92%;
+
+    --radius: 0.5rem;
+
+    --font-heading: 'Space Mono', monospace;
+    --font-body: 'Inter', sans-serif;
+
+    --sidebar-background: 0 0% 5%;
+    --sidebar-foreground: 0 0% 92%;
+    --sidebar-primary: 0 0% 95%;
+    --sidebar-primary-foreground: 0 0% 5%;
+    --sidebar-accent: 0 0% 12%;
+    --sidebar-accent-foreground: 0 0% 92%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 0 0% 92%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@layer components {
+  .typewriter-cursor::after {
+    content: '|';
+    animation: blink 1s step-end infinite;
+    @apply text-foreground ml-0.5;
+  }
+
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+
+  /* CRED socket/bezel */
+  .cred-socket {
+    background: #111110;
+    border-radius: 9999px;
+    padding: 6px;
+    box-shadow:
+      0 8px 24px rgba(0,0,0,0.7),
+      inset 0 1px 0 rgba(255,255,255,0.04),
+      inset 0 -4px 12px rgba(0,0,0,0.6);
+    display: inline-flex;
+  }
+
+  /* CRED button face */
+  .cred-btn {
+    font-family: 'Space Mono', monospace;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.08em;
+    color: #c8a882;
+    background:
+      radial-gradient(ellipse 60% 50% at 50% 0%, rgba(200,168,130,0.18) 0%, transparent 100%),
+      #1a1917;
+    border-radius: 9999px;
+    border: none;
+    padding: 14px 48px;
+    cursor: pointer;
+    box-shadow:
+      inset 0 1px 0 rgba(200,168,130,0.15),
+      inset 0 -2px 6px rgba(0,0,0,0.5),
+      0 4px 12px rgba(0,0,0,0.5);
+    transition: all 0.15s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+  }
+
+  .cred-btn:hover {
+    background:
+      radial-gradient(ellipse 60% 50% at 50% 0%, rgba(200,168,130,0.26) 0%, transparent 100%),
+      #1c1b19;
+    color: #d4b896;
+    box-shadow:
+      inset 0 1px 0 rgba(200,168,130,0.22),
+      inset 0 -2px 6px rgba(0,0,0,0.5),
+      0 6px 18px rgba(0,0,0,0.6);
+  }
+
+  .cred-btn:active {
+    background:
+      radial-gradient(ellipse 60% 50% at 50% 0%, rgba(200,168,130,0.08) 0%, transparent 100%),
+      #141412;
+    box-shadow:
+      inset 0 2px 6px rgba(0,0,0,0.6),
+      inset 0 -1px 0 rgba(200,168,130,0.06),
+      0 2px 6px rgba(0,0,0,0.4);
+    transform: translateY(1px);
+  }
+
+  .cred-btn-sm {
+    padding: 10px 32px;
+    font-size: 13px;
+  }
+}
