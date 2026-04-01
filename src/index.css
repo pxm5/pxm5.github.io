@@ -58,6 +58,14 @@
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-body);
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  #root {
+    min-height: 100vh;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -140,5 +148,32 @@
   .cred-btn-sm {
     padding: 10px 32px;
     font-size: 13px;
+  }
+
+  @media (max-width: 640px) {
+    .cred-socket {
+      width: auto;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      display: inline-flex;
+    }
+
+    .cred-btn,
+    .cred-btn-sm {
+      padding: 10px 24px;
+      font-size: 14px;
+      min-width: 0;
+      width: auto;
+    }
+
+    section {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .max-w-4xl {
+      max-width: 100%;
+    }
   }
 }

@@ -17,9 +17,10 @@ const CodeRain = () => {
     let drops: number[];
 
     const resize = () => {
-      canvas.width = canvas.offsetWidth * window.devicePixelRatio;
-      canvas.height = canvas.offsetHeight * window.devicePixelRatio;
-      ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = canvas.offsetWidth * dpr;
+      canvas.height = canvas.offsetHeight * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       columns = Math.floor(canvas.offsetWidth / fontSize);
       drops = Array(columns).fill(1).map(() => Math.random() * -80);
     };
