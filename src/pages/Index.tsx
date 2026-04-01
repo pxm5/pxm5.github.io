@@ -1,6 +1,7 @@
 import { projects } from "@/data/projects";
 import ProjectCard from "@/components/ProjectCard";
 import CodeRain from "@/components/CodeRain";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 import { ArrowUpRight, Github, Linkedin, Mail } from "lucide-react";
 
@@ -62,36 +63,47 @@ const Index = () => {
       </section>
 
       {/* About */}
-      <section id="about" className="max-w-4xl mx-auto px-6 py-20 border-t border-border">
-        <h2 className="font-heading text-sm tracking-[0.3em] text-muted-foreground uppercase mb-8">
-          About
-        </h2>
-        <div className="grid md:grid-cols-2 gap-10">
-          <p className="text-foreground leading-[1.8] font-body">
-            I'm a student and developer with a passion for AI, machine learning, and computer vision. 
-            I enjoy building projects that combine practical applications with research-driven ideas, 
-            whether it's developing intelligent systems, experimenting with neural networks, or creating 
-            tools that solve real-world problems.
-          </p>
-          <p className="text-muted-foreground leading-[1.8] font-body">
-            When I'm not coding, I explore math, technology, and ways to optimize workflows. 
-            I like to dive into philosophical concepts and read books. This site showcases my projects, 
-            interests, and thoughts, a window into how I approach problem-solving and creativity.
-          </p>
-        </div>
+      <section id="about" className="max-w-4xl mx-auto px-6 py-20">
+        <Card className="bg-background/80 backdrop-blur-md">
+          <CardHeader>
+            <CardTitle className="font-heading text-sm tracking-[0.3em] text-muted-foreground uppercase">
+              About
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="grid md:grid-cols-2 gap-10">
+              <p className="text-foreground leading-[1.8] font-body">
+                I'm a student and developer with a passion for AI, machine learning, and computer vision. 
+                I enjoy building projects that combine practical applications with research-driven ideas, 
+                whether it's developing intelligent systems, experimenting with neural networks, or creating 
+                tools that solve real-world problems.
+              </p>
+              <p className="text-muted-foreground leading-[1.8] font-body">
+                When I'm not coding, I explore math, technology, and ways to optimize workflows. 
+                I like to dive into philosophical concepts and read books. This site showcases my projects, 
+                interests, and thoughts, a window into how I approach problem-solving and creativity.
+              </p>
+            </div>
+          </CardContent>
+        </Card>
       </section>
 
       {/* Projects */}
       <section id="projects" className="max-w-4xl mx-auto px-6 py-20">
-        <h2 className="font-heading text-sm tracking-[0.3em] text-muted-foreground uppercase mb-12">
-          Projects
-        </h2>
-        <div>
-          {projects.map((project, i) => (
-            <ProjectCard key={project.title} project={project} index={i} />
-          ))}
-        </div>
-        <div className="border-t border-border" />
+        <Card className="bg-background/80 backdrop-blur-md">
+          <CardHeader>
+            <CardTitle className="font-heading text-sm tracking-[0.3em] text-muted-foreground uppercase">
+              Projects
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div>
+              {projects.map((project, i) => (
+                <ProjectCard key={project.title} project={project} index={i} />
+              ))}
+            </div>
+          </CardContent>
+        </Card>
       </section>
 
       {/* Contact */}
