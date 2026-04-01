@@ -93,18 +93,18 @@
   .cred-btn {
     font-family: 'Space Mono', monospace;
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 600;
     letter-spacing: 0.08em;
-    color: #c8a882;
+    color: #fe7743;
     background:
-      radial-gradient(ellipse 60% 50% at 50% 0%, rgba(200,168,130,0.18) 0%, transparent 100%),
+      radial-gradient(ellipse 60% 50% at 50% 0%, rgba(254,119,67,0.18) 0%, transparent 100%),
       #1a1917;
     border-radius: 9999px;
     border: none;
     padding: 14px 48px;
     cursor: pointer;
     box-shadow:
-      inset 0 1px 0 rgba(200,168,130,0.15),
+      inset 0 1px 0 rgba(254,119,67,0.15),
       inset 0 -2px 6px rgba(0,0,0,0.5),
       0 4px 12px rgba(0,0,0,0.5);
     transition: all 0.15s ease;
@@ -117,22 +117,22 @@
 
   .cred-btn:hover {
     background:
-      radial-gradient(ellipse 60% 50% at 50% 0%, rgba(200,168,130,0.26) 0%, transparent 100%),
+      radial-gradient(ellipse 60% 50% at 50% 0%, rgba(254,119,67,0.26) 0%, transparent 100%),
       #1c1b19;
-    color: #d4b896;
+    color: #ff8a5c;
     box-shadow:
-      inset 0 1px 0 rgba(200,168,130,0.22),
+      inset 0 1px 0 rgba(254,119,67,0.22),
       inset 0 -2px 6px rgba(0,0,0,0.5),
       0 6px 18px rgba(0,0,0,0.6);
   }
 
   .cred-btn:active {
     background:
-      radial-gradient(ellipse 60% 50% at 50% 0%, rgba(200,168,130,0.08) 0%, transparent 100%),
+      radial-gradient(ellipse 60% 50% at 50% 0%, rgba(254,119,67,0.08) 0%, transparent 100%),
       #141412;
     box-shadow:
       inset 0 2px 6px rgba(0,0,0,0.6),
-      inset 0 -1px 0 rgba(200,168,130,0.06),
+      inset 0 -1px 0 rgba(254,119,67,0.06),
       0 2px 6px rgba(0,0,0,0.4);
     transform: translateY(1px);
   }

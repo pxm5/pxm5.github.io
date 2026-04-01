@@ -112,7 +112,7 @@ const Index = () => {
           Contact
         </h2>
         <p className="text-foreground text-lg md:text-xl font-body font-light mb-10 max-w-xl">
-          Interested in collaborating or just want to chat? Reach out.
+          Interested in collaborating? Reach out.
         </p>
         <div className="flex flex-wrap gap-6">
           <div className="cred-socket">
