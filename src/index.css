@@ -75,9 +75,14 @@
 
 @layer components {
   .typewriter-cursor::after {
-    content: '|';
+    content: '';
+    display: inline-block;
+    width: 0.6ch;
+    height: 1em;
+    margin-left: 0.125rem;
+    background-color: hsl(var(--foreground));
     animation: blink 1s step-end infinite;
-    @apply text-foreground ml-0.5;
+    vertical-align: bottom;
   }
 
   @keyframes blink {

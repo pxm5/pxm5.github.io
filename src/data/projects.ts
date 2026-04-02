@@ -6,7 +6,7 @@ export interface Project {
   tags?: string[];
 }
 
-// ✏️ Edit this array to add/remove/update your projects
+
 export const projects: Project[] = [
   {
     title: "Research Paper Implementations",
